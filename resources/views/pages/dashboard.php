@@ -3,7 +3,6 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
 
-        <!-- Tarjeta Pendientes -->
         <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <div class="p-3 bg-red-50 rounded-lg text-red-500">
@@ -16,7 +15,6 @@
             </div>
         </div>
 
-        <!-- Tarjeta Por Revisar -->
         <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <div class="p-3 bg-blue-50 rounded-lg text-blue-500">
@@ -29,7 +27,6 @@
             </div>
         </div>
 
-        <!-- Tarjeta Completadas -->
         <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <div class="p-3 bg-green-50 rounded-lg text-green-500">
@@ -44,7 +41,6 @@
 
     </div>
 
-    <!-- Área de gráficas -->
     <div
         class="border-2 border-dashed border-gray-200 rounded-xl h-64 flex flex-col items-center justify-center text-gray-400">
         <i data-lucide="bar-chart-3" class="w-12 h-12 mb-3 text-gray-300"></i>

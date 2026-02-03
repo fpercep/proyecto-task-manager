@@ -1,29 +1,36 @@
+<?php
+$currentPage = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
+?>
 <aside
     class="w-64 min-w-[16rem] h-[calc(100vh-64px)] bg-gray-50 border-r border-gray-200 flex flex-col overflow-hidden hidden md:flex">
 
     <nav class="flex-1 py-6 px-3 space-y-1 flex flex-col overflow-hidden min-h-0">
 
-        <a href="#"
-            class="group flex items-center px-3 py-2.5 text-sm font-medium rounded-md bg-orange-400 text-white shadow-sm">
-            <i data-lucide="layout-grid" class="w-5 h-5 mr-3 text-orange-100"></i>
+        <a href="?page=dashboard"
+            class="group flex items-center px-3 py-2.5 text-sm font-medium rounded-md <?php echo $currentPage === 'dashboard' ? 'bg-orange-400 text-white shadow-sm' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'; ?>">
+            <i data-lucide="layout-grid"
+                class="w-5 h-5 mr-3 <?php echo $currentPage === 'dashboard' ? 'text-orange-100' : 'text-gray-400 group-hover:text-gray-500'; ?>"></i>
             Dashboard
         </a>
 
-        <a href="#"
-            class="group flex items-center px-3 py-2.5 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900">
-            <i data-lucide="sun" class="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-500"></i>
+        <a href="?page=mi-dia"
+            class="group flex items-center px-3 py-2.5 text-sm font-medium rounded-md <?php echo $currentPage === 'mi-dia' ? 'bg-orange-400 text-white shadow-sm' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'; ?>">
+            <i data-lucide="sun"
+                class="w-5 h-5 mr-3 <?php echo $currentPage === 'mi-dia' ? 'text-orange-100' : 'text-gray-400 group-hover:text-gray-500'; ?>"></i>
             Mi Día
         </a>
 
-        <a href="#"
-            class="group flex items-center px-3 py-2.5 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900">
-            <i data-lucide="list-todo" class="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-500"></i>
+        <a href="?page=tareas"
+            class="group flex items-center px-3 py-2.5 text-sm font-medium rounded-md <?php echo $currentPage === 'tareas' ? 'bg-orange-400 text-white shadow-sm' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'; ?>">
+            <i data-lucide="list-todo"
+                class="w-5 h-5 mr-3 <?php echo $currentPage === 'tareas' ? 'text-orange-100' : 'text-gray-400 group-hover:text-gray-500'; ?>"></i>
             Todas las Tareas
         </a>
 
-        <a href="#"
-            class="group flex items-center px-3 py-2.5 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900">
-            <i data-lucide="calendar" class="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-500"></i>
+        <a href="?page=calendario"
+            class="group flex items-center px-3 py-2.5 text-sm font-medium rounded-md <?php echo $currentPage === 'calendario' ? 'bg-orange-400 text-white shadow-sm' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'; ?>">
+            <i data-lucide="calendar"
+                class="w-5 h-5 mr-3 <?php echo $currentPage === 'calendario' ? 'text-orange-100' : 'text-gray-400 group-hover:text-gray-500'; ?>"></i>
             Calendario
         </a>
 
