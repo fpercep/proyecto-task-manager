@@ -32,7 +32,7 @@ $viewPath y $content cuelgan de index.php, es decir es dependiente -->
         <?php include $viewPath . '/components/sidebar.php'; ?>
 
         <main class="flex-1 overflow-y-auto bg-white p-8">
-            <div class="max-w-7xl mx-auto">
+            <div class="max-w-full mx-auto">
                 <?php
                 if (isset($content)) {
                     echo $content;
