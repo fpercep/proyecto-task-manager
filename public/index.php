@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/../config/database.php';
+
 $viewPath = __DIR__ . '/../resources/views';
 $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
 
